@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "M": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "T": {
+      "item": "minecraft:wheat"
+    },
+    "W": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    " L ",
+    "TMT",
+    " W "
+  ],
+  "result": {
+    "count": 2,
+    "id": "sadtaco:sad_taco"
+  }
+}

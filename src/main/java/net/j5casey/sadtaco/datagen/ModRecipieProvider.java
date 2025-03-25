@@ -21,6 +21,18 @@ public class ModRecipieProvider extends RecipeProvider implements IConditionBuil
 
     protected void buildRecipes(RecipeOutput recipeOutput){
         //Add recipes here
+
+        // Sad Taco crafting recipe (temporary)
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.SAD_TACO.get(), 2)
+                .pattern(" L ")
+                .pattern("TMT")
+                .pattern(" W ")
+                .define('L', Items.LEATHER)
+                .define('T', Items.WHEAT)
+                .define('M', Items.ROTTEN_FLESH)
+                .define('W', Items.PAPER)
+                .unlockedBy("has_rotten_flesh", has(Items.ROTTEN_FLESH))
+                .save(recipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

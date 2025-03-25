@@ -18,6 +18,14 @@ public class ModCreativeModeTabs {
 
     //Add creative tabs here
 
+    public static final Supplier<CreativeModeTab> SAD_TACO_TAB = CREATIVE_MODE_TAB.register("sad_taco_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAD_TACO.get()))
+                    .title(Component.translatable("creativetab.sadtaco.sadtaco"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.SAD_TACO.get());
+                    })
+                    .build());
+
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);

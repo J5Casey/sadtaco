@@ -20,7 +20,7 @@ public class ModDataMapProvider extends DataMapProvider {
         super(packOutput, lookupProvider);
     }
 
-    protected void gather(){
+    protected void gather(HolderLookup.Provider provider){
         //Add neoforge data maps here, like furnace fuels
     }
 }

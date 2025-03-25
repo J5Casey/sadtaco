@@ -14,5 +14,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //Register item models here
+        basicItem(ModItems.SAD_TACO.get());
     }
 }
